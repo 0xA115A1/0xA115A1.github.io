@@ -29,7 +29,7 @@
   body {
     color: black;
     font-family: monospace;
-    font-size: 16px;
+    font-size: large;
     line-height: 1.4;
     margin: 0;
     min-height: 100%;
@@ -39,7 +39,7 @@
   
 .nav {
     text-align: center;
-    font-size: 50;
+    font-size: xx-large;
 
     &-a {
         @extend .nav;
@@ -66,11 +66,7 @@
   }
 
 
-.block {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-  }
+
 
 a{
   color: black;
@@ -81,4 +77,10 @@ a{
   left: 50%;
   transform: translate(-50%, 0);
   padding: 10px;
+}
+
+.block {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
