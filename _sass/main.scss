@@ -17,26 +17,31 @@
 
   @media only screen and (max-width: 1702px) {
     body {
-      font-size: 20px;
+      font-size: 23px;
     }
   }
 
   @media only screen and (max-width: 1272px) {
     body {
-      font-size: 20px;
+      font-size: 23px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    body {
+      font-size: 25px;
     }
   }
   
   
   @media only screen and (max-width: 768px) {
     body {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
   
   @media only screen and (max-width: 320px) {
     body {
-      font-size: 10px;
+      font-size: 150px;
     }
   }
 
