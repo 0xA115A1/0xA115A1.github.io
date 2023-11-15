@@ -1,0 +1,45 @@
+---
+layout: default_null
+title: tldr всё давит
+permalink: /poetry/pressure
+---
+{% assign piece = site.data.poetry.pressure %}
+
+
+
+<dir
+    style=
+        "
+        max-width: 100px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        font: monospace;"
+>
+    <h4 
+        style=
+            "
+            -webkit-transform: translate(0px, 30px) rotate(-13deg);
+            "
+    >
+        {{piece.name}}
+    </h4>
+
+        
+    <p 
+        style=
+            "font-size: 8px;
+            line-height: 4px;
+            white-space: pre-wrap;
+            -webkit-transform: translate(0px, 30px) rotate(10deg);
+    ">
+        {{piece.text}}
+    </p>
+
+
+    <p 
+        style=
+            "-webkit-transform: translate(0px, 30px) rotate(170deg);"
+    > 
+        {{piece.date | date_to_long_string: "ordinal"}}
+    </p>
+</dir>

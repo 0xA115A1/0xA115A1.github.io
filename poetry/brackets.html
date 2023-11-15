@@ -1,0 +1,32 @@
+---
+layout: default_null
+title: все за ()
+permalink: /poetry/brackets
+---
+{% assign piece = site.data.poetry.brackets%}
+
+
+
+<dir
+    style=
+        "
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        font: monospace;
+        white-space: pre-wrap;"
+>
+    <h4>
+        {{piece.name}}
+    </h4>
+
+        
+    <p>
+        {{piece.text}}
+    </p>
+
+
+    <p>
+        {{piece.date | date_to_long_string: "ordinal"}}
+    </p>
+</dir>

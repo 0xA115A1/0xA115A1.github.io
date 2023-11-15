@@ -1,9 +1,17 @@
 ---
 layout: default
 title: AM's poetry
-permalink:/poerty
+permalink: /poetry/
 ---
-<div>
-    <h1>{{ "Hello World!" | downcase }}</h1>
-</div>
+
+<h3>So here's the texts</h3>
+{% for poetry_hash in site.data.poetry | sort: created_at | reverse %}
+{% assign piece = poetry_hash[1] %}
+<a href={{/poetry/|append:piece.id}}>
+    {{piece.name}}
+<a/>
+{{piece.date| date_to_long_string: "ordinal" }}
+<hr/>
+{% endfor %}
+
   
