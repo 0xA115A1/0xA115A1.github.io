@@ -16,6 +16,9 @@
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
+
+domain: 0xA115A1.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://0xA115A1.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 # in the templates via {{ site.myvariable }}.
 
 title: Alisa-Michelle
