@@ -1,48 +1,58 @@
 
-
-
-// -------------- THEME SWITCHER -------------- //
-@mixin dark-appearance {
-    filter: invert(1);
-    img {
-      filter: invert(1);
-  
-      &.ioda { filter: invert(0); }
-    }
-  }
-  
-  body[a="dark"] { @include dark-appearance; }
-  
-  
-  @media (prefers-color-scheme: dark) {
-    body[a="auto"] { @include dark-appearance; }
-  }
-  // -------------------------------------------- //
-  
   // bg color is also needed in html in order to
   // block body's background propagation
   // see: https://stackoverflow.com/a/61265706
   html, body { background: white; }
   
   html { height: 100%; }
-  
+
+
   body {
     color: black;
     font-family: monospace;
-    font-size: x-large;
     line-height: 1.4;
-    margin: 0;
     min-height: 100%;
     overflow-wrap: break-word;
   }
 
+  @media only screen and (max-width: 1702px) {
+    body {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1272px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    body {
+      font-size: 10px;
+    }
+  }
+
   
 .nav {
-    text-align: center;
-    font-size: xx-large;
-
-    &-a {
-        @extend .nav;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+    .nav-a {
+      float: left;
+      display: block;
+      font-size: xx-large;
+      padding: 14px 16px;
+      margin: 10px;
     
         &-selected {
             @extend .nav-a;
@@ -54,7 +64,7 @@
             color: gray;
         }
     }
-}
+
   
 
  
