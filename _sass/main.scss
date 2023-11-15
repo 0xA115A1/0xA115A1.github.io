@@ -75,3 +75,10 @@
 a{
   color: black;
 }
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px;
+}
