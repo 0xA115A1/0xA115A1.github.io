@@ -1,14 +1,23 @@
 ---
 layout: default
-title: About me, AM
-permalink: /about/
+title: AM
+permalink: /
 ---
-# Hi im Alisa-Michelle
+## Hi im Alisa-Michelle
 
 Im certainly doing stuff.
 
-# Social Media / Contacts 
+For example:
+
+- [poetry]({{site.url}}/poetry)
+
+---
+
+
+### Social Media / Contacts 
 - [twitter 🐦](https://twitter.com/{{site.username}})
 - [instagram 📷](https://instagram.com/{{site.username}})
 - [github 🐈‍⬛](https://github.com/{{site.username}})
 - [email 💌](mailto:{{site.username}}@gmail.com)
+
+---

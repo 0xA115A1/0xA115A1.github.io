@@ -1,11 +1,4 @@
-.selected_nav {
-    color: black;
-  }
-  
-.other_nav {
-    color: gray;
-}
-  
+
 
 
 // -------------- THEME SWITCHER -------------- //
@@ -43,19 +36,38 @@
     overflow-wrap: break-word;
   }
 
-  nav {
-    text-align: center;
-  }
-
-  div {
-    text-align: center;
-
-  }
   
-  hr {
+.nav {
     text-align: center;
+    font-size: 50;
+
+    &-a {
+        @extend .nav;
+    
+        &-selected {
+            @extend .nav-a;
+            color: black;
+        }
+        
+        &-other {
+            @extend .nav-a;
+            color: gray;
+        }
+    }
+}
+  
+
+ 
+  hr {
     border: 0;
   
     &:before { content: '/////' }
     &:after { content: attr(data-content) '/////' }
+  }
+
+
+.block {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
   }
