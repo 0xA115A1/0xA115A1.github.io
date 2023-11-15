@@ -1,0 +1,61 @@
+.selected_nav {
+    color: black;
+  }
+  
+.other_nav {
+    color: gray;
+}
+  
+
+
+// -------------- THEME SWITCHER -------------- //
+@mixin dark-appearance {
+    filter: invert(1);
+    img {
+      filter: invert(1);
+  
+      &.ioda { filter: invert(0); }
+    }
+  }
+  
+  body[a="dark"] { @include dark-appearance; }
+  
+  
+  @media (prefers-color-scheme: dark) {
+    body[a="auto"] { @include dark-appearance; }
+  }
+  // -------------------------------------------- //
+  
+  // bg color is also needed in html in order to
+  // block body's background propagation
+  // see: https://stackoverflow.com/a/61265706
+  html, body { background: white; }
+  
+  html { height: 100%; }
+  
+  body {
+    color: black;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    min-height: 100%;
+    overflow-wrap: break-word;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  div {
+    text-align: center;
+
+  }
+  
+  hr {
+    text-align: center;
+    border: 0;
+  
+    &:before { content: '/////' }
+    &:after { content: attr(data-content) '/////' }
+  }

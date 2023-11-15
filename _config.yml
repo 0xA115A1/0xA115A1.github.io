@@ -21,19 +21,22 @@ domain: 0xA115A1.github.io       # if you want to force HTTPS, specify the domai
 url: https://0xA115A1.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 # in the templates via {{ site.myvariable }}.
 
-title: Alisa-Michelle
+title: '┏┓┳┳┓\n┣┫┃┃┃\n┛┗┛ ┗'
+     
+
+
 email: '0xA115A1@gmail.com'
 description: >- # this means to ignore newlines until "baseurl:"
-  Tis me Alisa!!!
+  Tis me Alisa!!!✽✻✿❀❁❃✵
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: '0xA115A1'
-github_username:  '0xA115A1'
+username: '0xA115A1'
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
