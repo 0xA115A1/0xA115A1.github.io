@@ -1,0 +1,98 @@
+id: 'hyperromanticism'
+name: 'hyperromanticism (in progress)'
+intro: |
+  поли-нарратив
+  пройти по всем тропинкам
+  почувствовать всё –
+  бездорожье в лесу
+
+  (do not) chose your lover
+  (do not) chose love
+
+fragments:
+  -
+    name: A
+    texts:
+      - |
+        всё до упора
+        ебаться под летова после плакать под элли/икиту
+        отдавая часть души готовую отдаться
+        и тело заодно
+        тело ○ 
+        душа ● 
+        тело-душа ◍
+        и что-то ещё 
+        делить на два когда вы не одни
+        излишне 
+        третий лишний а третья нет
+      - |
+        просроченная пленка
+        явленная через год после 
+        что-то затерто
+        на ней и нет
+        свет пожирает свет
+  -
+    name: G
+    texts:
+      - |
+        I don't know how to love him
+        what to do how to move him
+
+        лишённость эротизма 
+        inherited from cloistered scholars 
+        makes us into them
+
+        (tho they did feel
+        at times
+        something confusing and unholy)
+
+        но
+        пожалуйста
+        господи блять ПОЖАЛУЙСТА 
+        хватит уже про
+        ленинградский андеграунд
+        семиотику
+        кибернетику
+        лотмана
+        пушкинистику
+        латура
+        гипертекст до html
+        etc. until True
+
+        хватит просто считывать меня умной девочкой
+
+        я уже назвала тебя господом 
+        so I’m lost
+        please 
+
+        judas must you betray me with a
+        kiss?
+  -
+    name: KeyError
+    texts:
+      - |
+        $touch her
+        oh hi
+        i don't really care
+        maybe 
+        ok
+        head or tails?
+        random generator of love
+        i'm sure that will be ok
+        (it was/nt ok)
+        so i guess bye, dont forget to clean-up 
+        $rm her
+        i dont even remember your name
+        $cat her
+        cat: her: No such thing in the universe, sorry
+        oh that's completely ok
+
+
+
+
+date: 
+lang: 
+  - ru
+tags: 
+  - hypertext
+

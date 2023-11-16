@@ -2,6 +2,11 @@
   // bg color is also needed in html in order to
   // block body's background propagation
   // see: https://stackoverflow.com/a/61265706
+
+  $alisa : #A115A1;
+  $alice : #A11C31;
+
+
   html, body { background: white; }
   
   html { height: 100%; }
@@ -75,6 +80,7 @@
  
   hr {
     border: 0;
+    color: $alice;
   
     &:before { content: '/////' }
     &:after { content: attr(data-content) '/////' }
@@ -98,4 +104,8 @@ a{
   max-width: 60%;
   margin: 0 auto;
   padding: 4rem 2rem;
+}
+
+h1,h2,h3,h4{
+  color: $alisa
 }
