@@ -1,0 +1,51 @@
+---
+layout: default_null
+title: hyperromanticism (in progress)
+permalink: /poetry/hyperromanticism
+---
+{% assign piece = site.data.poetry.hyperromanticism%}
+
+
+<script src="../assets/js/hyperromanticism.js" async>
+</script>
+<div
+    class="center"
+    style=
+        "
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        font: monospace;
+        white-space: pre-wrap;"
+>
+    <h4>
+        {{piece.name}}
+    </h4>
+
+        
+    <p style="text-shadow: 2px; text-emphasis-color: gray;">
+        {{piece.intro}}
+    </p>
+    <hr/>
+    <select id="nameInput" name="name">
+        {% for fragment in piece.fragments  %}
+        <option value={{fragment.name}}>{{fragment.name}}</option>
+        {% endfor %}
+    </select>
+    <hr/>
+    <div>
+    {% for fragment in piece.fragments  %}
+        <div style="text-indent: 100%;white-space: nowrap; overflow: hidden;" class='{{fragment.name}}'>
+            {% for text in fragment.texts %}
+                <p>
+                    {{text}}
+                </p>
+                <hr>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    </div>
+    <p>
+        {{piece.date | date_to_long_string: "ordinal"}}
+    </p>
+</div>
