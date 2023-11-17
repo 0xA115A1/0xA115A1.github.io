@@ -2,9 +2,25 @@
   // bg color is also needed in html in order to
   // block body's background propagation
   // see: https://stackoverflow.com/a/61265706
-
   $alisa : #A115A1;
   $alice : #A11C31;
+
+  p{
+    white-space: pre-wrap;
+  }
+  h1,h2,h3,h4,h5,h6{
+    color: $alisa;
+    
+  }
+  legend{
+    white-space: pre-wrap;
+  }
+
+  .hidden{
+    font-size: 0px;
+  }
+
+  
 
 
   html, body { background: white; }
@@ -15,7 +31,6 @@
   body {
     color: black;
     font-family: monospace;
-    line-height: 1.4;
     min-height: 100%;
     overflow-wrap: break-word;
   }

@@ -1,5 +1,5 @@
 ---
-layout: default_null
+layout: hyperromanticism
 title: hyperromanticism (in progress)
 permalink: /poetry/hyperromanticism
 ---
@@ -16,8 +16,11 @@ permalink: /poetry/hyperromanticism
         margin: 0 auto;
         padding: 4rem 2rem;
         font: monospace;
-        white-space: pre-wrap;"
+        white-space: nowrap;"
 >
+    <div class="background">
+        
+    </div>
     <h4>
         {{piece.name}}
     </h4>
@@ -27,20 +30,34 @@ permalink: /poetry/hyperromanticism
         {{piece.intro}}
     </p>
     <hr/>
-    <select id="nameInput" name="name">
+    <!-- <select id="nameInput" name="name">
         {% for fragment in piece.fragments  %}
         <option value={{fragment.name}}>{{fragment.name}}</option>
         {% endfor %}
-    </select>
+    </select> -->
+
+    {% assign n = piece.fragments | size %}
+    {% assign fragments = piece.fragments  %}
+    <fieldset id="nameInput" >
+        <legend>{{piece.legend}}</legend>
+        {% for fragment in fragments  %}
+        <input type="checkbox" name={{fragment.name}}>{{fragment.name}}</input>
+        {% endfor %}
+    </fieldset>
     <hr/>
+    <h6>
+        {{piece.addition}}
+    </h6>
+    <hr/>
+    <hr/ class="super_hr">
     <div>
-    {% for fragment in piece.fragments  %}
-        <div style="text-indent: 100%;white-space: nowrap; overflow: hidden;" class='{{fragment.name}}'>
+    {% for fragment in fragments %}
+        <div class='{{fragment.name}} hidden overlapse'>
+            <h4>{{fragment.name}}</h4>
             {% for text in fragment.texts %}
                 <p>
                     {{text}}
                 </p>
-                <hr>
             {% endfor %}
         </div>
     {% endfor %}
