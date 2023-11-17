@@ -5,6 +5,13 @@
   $alisa : #A115A1;
   $alice : #A11C31;
 
+
+  details{
+    font-size: 14px;
+  }
+  summary{
+    color:#A115A1
+  }
   p{
     white-space: pre-wrap;
   }
@@ -43,12 +50,12 @@
 
   @media only screen and (max-width: 1272px) {
     body {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
   @media only screen and (max-width: 1024px) {
     body {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
   
@@ -116,7 +123,7 @@ a{
 }
 
 .block {
-  max-width: 60%;
+  max-width: 50%;
   margin: 0 auto;
   padding: 4rem 2rem;
 }

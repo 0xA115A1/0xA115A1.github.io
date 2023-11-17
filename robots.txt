@@ -1,5 +1,7 @@
-User-agent: * Allow: /
-User-agent:
+User-agent: * 
+Allow: /
 
 User-agent: Yandex
 Disallow: / 
+
+Sitemap: https://0xa115a1.github.io/sitemap.xml

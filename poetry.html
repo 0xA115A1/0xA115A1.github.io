@@ -5,9 +5,9 @@ permalink: /poetry/
 ---
 
 <h3>So here's the texts</h3>
-{% for poetry_hash in site.data.poetry | sort: created_at | reverse %}
+{% for poetry_hash in site.data.poetry %}
 {% assign piece = poetry_hash[1] %}
-<a href={{/poetry/|append:piece.id}}>
+<a href={{"/poetry/" | append:piece.id}}>
     {{piece.name}}
 <a/>
 {{piece.date| date_to_long_string: "ordinal" }}
