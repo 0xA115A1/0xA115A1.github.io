@@ -21,6 +21,7 @@ For example:
 - [instagram 📷](https://instagram.com/{{site.username}})
 - [github 🐈‍⬛](https://github.com/{{site.username}})
 - [email 💌](mailto:{{site.username}}@gmail.com)
+- [tg channel 📃](https://t.me/oxa115a1)
 
 --- 
 
