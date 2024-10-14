@@ -34,8 +34,4 @@ For example:
 <summary>RUB</summary>
 5559492513216054
 </details>
-<details>
-<summary>ETH</summary>
-0xF69497025dA4Dc7427F48087Dcb4B32c188dBde6
-</details>
 
