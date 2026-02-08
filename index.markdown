@@ -1,37 +1,20 @@
 ---
 layout: default
-title: AM
+title: Alisa-Michelle's Site
 permalink: /
 ---
-## Hi i'm Alisa-Michelle
+# Hi, i'm ***Alisa-Michelle***
 
-I'm doing stuff.
+I'm a developer, researcher and a poet, oh, about that, here's some [poetry]({{site.url}}/poetry)
 
-For example:
+## Education
 
-- [poetry]({{site.url}}/poetry)
+- BSc in **IT** @ LETI
+- MA in **Digital Humanities** @ ITMO 
 
-### Education
-
-- BSc in IT @ LETI
-- MA in DH @ ITMO 
-
-### Social Media / Contacts 
-- [twitter 🐦](https://twitter.com/{{site.username}})
-- [instagram 📷](https://instagram.com/{{site.username}})
-- [github 🐈‍⬛](https://github.com/{{site.username}})
-- [email 💌](mailto:{{site.username}}@gmail.com)
-- [tg channel 📃](https://t.me/oxa115a1)
-
---- 
-
----
-
----
-
-###### On bread and roses
-<details>
-<summary>RUB</summary>
-5559492513216054
-</details>
-
+## Social Media / Contacts 
+- [twitter ](https://twitter.com/{{site.username}})🐦
+- [instagram](https://instagram.com/{{site.username}})📷
+- [github](https://github.com/{{site.username}})🐈‍⬛
+- [email](mailto:{{site.username}}@gmail.com)💌
+- [tg channel](https://t.me/oxa115a1)📃

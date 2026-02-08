@@ -1,33 +1,6 @@
 ---
-layout: default_null
+layout: poem
+id: counting
 title: считательные упражнения
 permalink: /poetry/counting
 ---
-{% assign piece = site.data.poetry.counting%}
-
-
-
-<dir
-    class="center"
-    style=
-        "
-        max-width: 50%;
-        margin: 0 auto;
-        padding: 4rem 2rem;
-        font: monospace;
-        white-space: pre-wrap;"
->
-    <h4>
-        {{piece.name}}
-    </h4>
-
-        
-    <p>
-        {{piece.text}}
-    </p>
-
-
-    <p>
-        {{piece.date | date_to_long_string: "ordinal"}}
-    </p>
-</dir>

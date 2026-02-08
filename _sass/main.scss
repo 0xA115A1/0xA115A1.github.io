@@ -2,100 +2,77 @@
   // bg color is also needed in html in order to
   // block body's background propagation
   // see: https://stackoverflow.com/a/61265706
-  $alisa : #A115A1;
-  $alice : #A11C31;
 
-
-  details{
-    font-size: 14px;
-  }
-  summary{
-    color:#A115A1
-  }
-  p{
-    white-space: pre-wrap;
-  }
-  h1,h2,h3,h4,h5,h6{
-    color: $alisa;
-    
-  }
-  legend{
-    white-space: pre-wrap;
-  }
-
-  .hidden{
-    font-size: 0px;
-  }
-
-  
-
+  @import "commons";
+  @import "fonts";
 
   html, body { background: white; }
   
   html { height: 100%; }
-
-
+  
   body {
     color: black;
-    font-family: monospace;
+    font-family: $font-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     min-height: 100%;
     overflow-wrap: break-word;
+    // Fluid font scaling: min 16px, scales based + 1.5 percent of the viewport, max 20px
+    font-size: clamp(1rem, calc(1rem + 1.5vw), 1.25rem);
   }
 
-  @media only screen and (max-width: 1702px) {
-    body {
-      font-size: 25px;
-    }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-family: $font-sans;
+    font-weight: 700;
+    font-style: normal;
+    color: $alisa;
   }
 
-  @media only screen and (max-width: 1272px) {
-    body {
-      font-size: 20px;
-    }
-  }
-  @media only screen and (max-width: 1024px) {
-    body {
-      font-size: 20px;
-    }
-  }
   
-  
-  @media only screen and (max-width: 768px) {
-    body {
-      font-size: 30px;
-    }
+  em {
+    color: $alice;
   }
-  
-  @media only screen and (max-width: 320px) {
-    body {
-      font-size: 150px;
-    }
+
+  strong {
+    color: $alice;
   }
+
+  a {
+    color: black;
+  }
+
 
   
 .nav {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  font-family: $font-sans;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-a {
+  display: block;
+  font-size: xx-large;
+  padding: 14px 16px;
+  margin: 10px;
+  text-decoration: none;
+
+  &-selected {
+    @extend .nav-a;
+    color: black;
+    font-weight: 700;
   }
-    .nav-a {
-      float: left;
-      display: block;
-      font-size: xx-large;
-      padding: 14px 16px;
-      margin: 10px;
-    
-        &-selected {
-            @extend .nav-a;
-            color: black;
-        }
-        
-        &-other {
-            @extend .nav-a;
-            color: gray;
-        }
-    }
+  
+  &-other {
+    @extend .nav-a;
+    color: gray;
+  }
+}
 
   
 
@@ -107,27 +84,3 @@
     &:before { content: '/////' }
     &:after { content: attr(data-content) '/////' }
   }
-
-
-
-
-a{
-  color: black;
-}
-
-.center {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  padding: 10px;
-}
-
-.block {
-  max-width: 50%;
-  margin: 0 auto;
-  padding: 4rem 2rem;
-}
-
-h1,h2,h3,h4{
-  color: $alisa
-}

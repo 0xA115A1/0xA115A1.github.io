@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% assign piece = site.data.poetry[page.id] %}
+<h4>{{ piece.name }}</h4>
+<div class="pre_wrap">{{ piece.text }}</div>
+<p>{{ piece.date | date_to_long_string: "ordinal" }}</p>

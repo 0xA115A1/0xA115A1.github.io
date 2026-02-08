@@ -1,0 +1,34 @@
+
+  // Colors
+$alisa : #A115A1;
+$alice : #A11C31;
+
+// Utilities
+.hidden {
+  font-size: 0px;
+}
+
+.pre_wrap{
+ white-space: pre-wrap;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+// Main container: centered content block
+.block {
+  width: 100%;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 4rem;
+}
+
+// Alias for .block (both do the same thing now)
+.center {
+  @extend .block;
+  padding: 1rem;  // slightly smaller padding variant
+}

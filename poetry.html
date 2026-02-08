@@ -4,14 +4,19 @@ title: AM's poetry
 permalink: /poetry/
 ---
 
-<h3>So here's the texts</h3>
-{% for poetry_hash in site.data.poetry %}
-{% assign piece = poetry_hash[1] %}
-<a href={{"/poetry/" | append:piece.id}}>
-    {{piece.name}}
-<a/>
-{{piece.date| date_to_long_string: "ordinal" }}
+<h1>So here's the texts</h1>
+<div> there's something coming, meaning a rework of that site but therer's old stuff</div>
 <hr/>
+
+{% for poetry_hash in site.data.poetry %}
+    {% assign piece = poetry_hash[1] %}
+    {{piece.name}}
+    <a href={{"/poetry/" | append:piece.id}}>
+        link
+    </a>
+<hr/>
+
 {% endfor %}
+
 
   

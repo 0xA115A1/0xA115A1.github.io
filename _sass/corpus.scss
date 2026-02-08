@@ -1,0 +1,28 @@
+
+@import "commons";
+
+.reference {
+    color: $alisa;
+}
+
+.display { white-space: pre-wrap; display: block; }
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    background-color: rgb(0, 0, 0);
+    color: rgb(254, 224, 224);
+}
+
+#back-button {
+    background-color: rgb(22, 21, 21);
+    display: block;
+    margin-top: 2rem;
+    font-size: large;
+    color: $alisa;
+    size: 10vm;
+    text-decoration: none;}
+
+ a {
+    color: $alice;
+  }
